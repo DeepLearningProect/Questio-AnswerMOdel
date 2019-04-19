@@ -56,8 +56,8 @@ def targz_unzip_single_file(zip_file_name, output_file_name, interior_relative_p
         with tarfile.open(zip_file_name) as un_zipped:
             un_zipped.extract(interior_relative_path+output_file_name)    
 unzip_single_file(glove_zip_file, glove_vectors_file)
-# targz_unzip_single_file(data_set_zip, train_set_file, "tasks_1-20_v1-2/en/")
-# targz_unzip_single_file(data_set_zip, test_set_file, "tasks_1-20_v1-2/en/")
+targz_unzip_single_file(data_set_zip, train_set_file, "tasks_1-20_v1-2/en/")
+targz_unzip_single_file(data_set_zip, test_set_file, "tasks_1-20_v1-2/en/")
 
 # Deserialize GloVe vectors
 glove_wordmap = {}
