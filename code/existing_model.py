@@ -1,9 +1,3 @@
-from IPython import get_ipython
-ipy = get_ipython()
-if ipy is not None:
-    ipy.run_line_magic('matplotlib', 'inline')
-
-
 
 import tensorflow as tf
 import numpy as np
